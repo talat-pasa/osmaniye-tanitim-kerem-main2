@@ -37,32 +37,32 @@ document.addEventListener("DOMContentLoaded", function() {
         let isValid = true;
 
         if (adSoyad === "") {
-            errorAd.textContent = "Lutfen adinizi ve soyadinizi giriniz.";
+            errorAd.textContent = "Lütfen adınızı ve soyadınızı giriniz.";
             isValid = false;
         } else if (adSoyad.length < 3) {
-            errorAd.textContent = "Ad soyad en az 3 karakter olmalidir.";
+            errorAd.textContent = "Ad soyad en az 3 karakter olmalıdır.";
             isValid = false;
         }
 
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (email === "") {
-            errorEmail.textContent = "Lutfen e-posta adresinizi giriniz.";
+            errorEmail.textContent = "Lütfen e-posta adresinizi giriniz.";
             isValid = false;
         } else if (!emailRegex.test(email)) {
-            errorEmail.textContent = "Gecerli bir e-posta adresi giriniz (Orn: isim@mail.com).";
+            errorEmail.textContent = "Geçerli bir e-posta adresi giriniz (Örn: isim@mail.com).";
             isValid = false;
         }
 
         if (yorum === "") {
-            errorYorum.textContent = "Lutfen bir yorum veya oneri yaziniz.";
+            errorYorum.textContent = "Lütfen bir yorum veya öneri yazınız.";
             isValid = false;
         } else if (yorum.length < 10) {
-            errorYorum.textContent = "Yorumunuz biraz daha aciklayici olmalidir (en az 10 karakter).";
+            errorYorum.textContent = "Yorumunuz biraz daha açıklayıcı olmalıdır (en az 10 karakter).";
             isValid = false;
         }
 
         if (isValid) {
-            successMsg.textContent = "Tesekkurler! Yorumunuz basariyla gonderildi (simule edildi).";
+            successMsg.textContent = "Teşekkürler! Yorumunuz başarıyla gönderildi (simüle edildi).";
             commentForm.reset();
         }
     });
