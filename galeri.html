@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotoğraf Galerisi - Osmaniye</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🥜</span> Osmaniye Tanıtım <span class="logo-icon">🥜</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="kultur.html">Kültür & Lezzetler</a>
+                <a href="gezilecek.html">Gezilecek Yerler</a>
+                <a href="galeri.html" class="active">Fotoğraf Galerisi</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="icerik-karti">
+            <h2>Osmaniye Fotoğraf Galerisi</h2>
+            <p>Şehrimizin tarihi, kültürel ve doğal güzelliklerine ait fotoğraflar. Büyütmek istediğiniz fotoğrafın üzerine tıklayabilirsiniz.</p>
+            <p class="galeri-notu">Bu galeride yer alan fotoğraflar bizzat Arda Özer tarafından çekilmiştir.</p>
+            
+            <div class="galeri-izgara">
+                <img src="galeri/2.jpeg" alt="Osmaniye Galeri Fotoğrafı 2" class="galeri-ogesi">
+                <img src="galeri/3.jpeg" alt="Osmaniye Galeri Fotoğrafı 3" class="galeri-ogesi">
+                <img src="galeri/4.jpeg" alt="Osmaniye Galeri Fotoğrafı 4" class="galeri-ogesi">
+                <img src="galeri/5.jpeg" alt="Osmaniye Galeri Fotoğrafı 5" class="galeri-ogesi">
+                <img src="galeri/6.jpeg" alt="Osmaniye Galeri Fotoğrafı 6" class="galeri-ogesi">
+                <img src="galeri/7.jpeg" alt="Osmaniye Galeri Fotoğrafı 7" class="galeri-ogesi">
+                <img src="galeri/8.jpeg" alt="Osmaniye Galeri Fotoğrafı 8" class="galeri-ogesi">
+                <img src="galeri/9.jpeg" alt="Osmaniye Galeri Fotoğrafı 9" class="galeri-ogesi">
+                <img src="galeri/10.jpeg" alt="Osmaniye Galeri Fotoğrafı 10" class="galeri-ogesi">
+                <img src="galeri/12.jpeg" alt="Osmaniye Galeri Fotoğrafı 12" class="galeri-ogesi">
+                <img src="galeri/13.jpeg" alt="Osmaniye Galeri Fotoğrafı 13" class="galeri-ogesi">
+                <img src="galeri/14.jpeg" alt="Osmaniye Galeri Fotoğrafı 14" class="galeri-ogesi">
+                <img src="galeri/15.jpeg" alt="Osmaniye Galeri Fotoğrafı 15" class="galeri-ogesi">
+                <img src="galeri/16.jpeg" alt="Osmaniye Galeri Fotoğrafı 16" class="galeri-ogesi">
+                <img src="galeri/18.jpeg" alt="Osmaniye Galeri Fotoğrafı 18" class="galeri-ogesi">
+                <img src="galeri/eskilik.jpg" alt="Osmaniye Tarihi Alan" class="galeri-ogesi">
+                <img src="galeri/kadirlikoy.jpg" alt="Kadirli Köy Manzarası" class="galeri-ogesi">
+                <img src="galeri/kalabalikfoto.jpg" alt="Osmaniye Şehir Hayatı" class="galeri-ogesi">
+                <img src="galeri/karatepe.jpg" alt="Karatepe Aslantaş" class="galeri-ogesi">
+                <img src="galeri/ova.jpeg" alt="Osmaniye Ovası" class="galeri-ogesi">
+                <img src="galeri/selale.jpg" alt="Karaçay Şelalesi" class="galeri-ogesi">
+                <img src="galeri/zorkunkis.jpeg" alt="Zorkun Kış Manzarası" class="galeri-ogesi">
+            </div>
+        </section>
+    </main>
+
+    <div id="galleryModal" class="modal">
+        <span class="modal-close" id="modalClose">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="modalCaption" class="modal-caption"></div>
+    </div>
+
+    <footer class="alt-bilgi">
+        <p>(c) 2026 Osmaniye Tanıtım Projesi. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
